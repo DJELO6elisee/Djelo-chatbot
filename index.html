@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat avec Djelo IA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="chat-wrapper">
+        <div class="chat-container">
+              <div class="chat-header">
+                  <h4>Djelo Chatbot </h4>
+              </div>
+      
+              <div class="chat-messages" id="chat-messages">
+                  <!-- Messages will be appended here by JavaScript -->
+                  <div class="message bot-message">Comment! pourrais-je vous aider aujourd'hui?</div>
+              </div>
+      
+              <div class="loading-indicator" id="loading-indicator" style="display:none;">En cour...</div>
+      
+      
+              <div class="chat-input">
+                  <div class="input-group">
+                      <input type="text" id="message-input" class="form-control" placeholder="Taper votre message...">
+                  <button class="btn btn-primary" type="button" id="send-button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                  </div>
+              </div>
+          </div>
+        <div class="chat-image">
+            <img src="img/farmer.jpg.webp" alt="Mon image">        
+        </div>
+      </div>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
