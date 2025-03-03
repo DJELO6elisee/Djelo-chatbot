@@ -26,22 +26,20 @@
         if (messageText !== '') {
             // 1. Ajouter le message de l'utilisateur
             appendMessage('user', messageText);
-
             // 2. Effacer le champ de saisie
             messageInput.value = '';
-
             // 3. Afficher l'indicateur de chargement
             loadingIndicator.style.display = 'block';
-
             // 4. Appeler l'API pour obtenir la réponse de l'IA
             getOpenResponse(messageText);
         }
     }
 
+
     // Fonction pour appeler l'API Gemini
     async function getOpenResponse(userMessage) {
         // Ajouter un contexte spécifique à l'agriculture et limiter la réponse à 100 mots
-        const context = "Vous êtes un expert en agriculture. Répondez uniquement aux questions concernant l'agriculture, l'élevage, les cultures, l'irrigation, etc. Si une question ne concerne pas ces sujets, refusez poliment et indiquez : 'Je ne peux fournir que des informations relatives à l'agriculture.' Répondez brièvement, en **maximum 100 mots**.";
+        const context = "Vous êtes un expert en agriculture. Répondez uniquement aux questions concernant l'agriculture, les cultures, l'irrigation, etc. Si une question ne concerne pas ces sujets, refusez poliment et indiquez : 'Je ne peux fournir que des informations relatives à l'agriculture.' Répondez brièvement, en **maximum 100 mots**.";
 
         const requestData = {
             contents: [{
@@ -80,6 +78,7 @@
         }
     }
 
+
     // Fonction pour limiter la réponse à 100 mots
     function limitWords(text, wordLimit) {
         const words = text.split(' ');
@@ -89,6 +88,7 @@
         return text;
     }
 
+
     // Fonction pour ajouter un message à la page
     function appendMessage(sender, message) {
         const messageDiv = document.createElement('div');
@@ -97,6 +97,7 @@
         chatMessages.appendChild(messageDiv);
         scrollToBottom();
     }
+
 
     // Fonction pour faire défiler la page vers le bas (afin de voir les derniers messages)
     function scrollToBottom() {
