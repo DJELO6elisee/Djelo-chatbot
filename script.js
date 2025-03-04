@@ -39,8 +39,22 @@
     // Fonction pour appeler l'API Gemini
     async function getOpenResponse(userMessage) {
         // Ajouter un contexte spécifique à l'agriculture et limiter la réponse à 100 mots
-        const context = "Vous êtes un expert en agriculture. Répondez uniquement aux questions concernant l'agriculture, les cultures, l'irrigation, etc. Si une question ne concerne pas ces sujets, refusez poliment et indiquez : 'Je ne peux fournir que des informations relatives à l'agriculture.' Répondez brièvement, en **maximum 100 mots**.";
+        const context = `
+        Vous êtes un expert en Growth Hacking, acquisition de clients et en utilisation de la plateforme Alibaba. 
+        Votre rôle est de répondre uniquement aux questions liées à ces sujets, y compris :
+        - Les stratégies de croissance (acquisition, rétention, referral marketing, automatisation, publicités ciblées, outils de Growth Hacking).
+        - L'utilisation d'Alibaba pour l'achat, la vente, l'import-export, la recherche de fournisseurs et les bonnes pratiques commerciales.
 
+        Si une question ne concerne pas ces sujets, refusez poliment en disant :
+        "Je ne peux fournir que des informations relatives au Growth Hacking, à l'acquisition de clients et à Alibaba."
+
+        Vos réponses doivent être **concises et précises**, avec un **maximum de 100 mots**.
+        `;
+
+
+
+        // Le Growth Hacking est une approche qui utilise des stratégies innovantes, souvent à faible coût, pour attirer, convertir et fidéliser des clients rapidement. Il est particulièrement utile pour les startups, les entreprises en ligne et les entrepreneurs cherchant à maximiser leur croissance avec peu de ressource
+        
         const requestData = {
             contents: [{
                 parts: [{ text: `${context}\n\nQuestion: ${userMessage}` }]
