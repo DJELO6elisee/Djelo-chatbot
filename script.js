@@ -1,8 +1,6 @@
 
-    // Clé API nécessaire pour accéder à l'API Gemini (remplace la valeur par ta clé API personnelle)
     const apiKey = "AIzaSyCR35tOfB2YXkEDgwHAF5QdgHt4qln5CyE"; 
 
-    // URL de l'API Gemini avec le modèle utilisé et l'ajout de la clé API
     const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
     const messageInput = document.getElementById('message-input');
@@ -50,10 +48,6 @@
 
         Vos réponses doivent être **concises et précises**, avec un **maximum de 100 mots**.
         `;
-
-
-
-        // Le Growth Hacking est une approche qui utilise des stratégies innovantes, souvent à faible coût, pour attirer, convertir et fidéliser des clients rapidement. Il est particulièrement utile pour les startups, les entreprises en ligne et les entrepreneurs cherchant à maximiser leur croissance avec peu de ressource
         
         const requestData = {
             contents: [{
