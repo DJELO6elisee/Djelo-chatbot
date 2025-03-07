@@ -13,26 +13,23 @@ const simpleResponses = {
     'ça va': "Tout va bien, merci ! Et vous ?",
     'salut': "Salut ! Comment puis-je vous aider aujourd'hui ?",
     'merci': "Avec plaisir ! 😊",
-    'comment tu vas': "Je vais très bien, merci ! 😊",
-    'quoi de neuf': "Pas grand-chose, à part que je suis là pour vous aider avec Alibaba et le Growth Hacking !",
-    'comment ça va': "Je vais bien, merci de demander ! 😊 D'ailleurs, avez-vous déjà exploré Alibaba pour trouver des fournisseurs agricoles ?",
-    'comment tu va': "Je vais bien, merci de demander ! 😊 Si vous cherchez des solutions pour l'agriculture, Alibaba peut vous aider à trouver des produits et des fournisseurs.",
-    'bonjour': "Bonjour, vous allez bien j'espère ? 😊 Vous savez que Alibaba propose une large gamme de produits pour l'agriculture ?",
-    'oui et toi': "Je vais bien aussi merci, comment pourrais-je vous aider ? Si vous avez besoin d'aide pour trouver des produits agricoles, je peux vous orienter sur Alibaba.",
-    'ok': "👍 D'accord ! Si tu as d'autres questions, n'hésite pas à demander, en particulier sur Alibaba pour l'agriculture.",
-    'ok merci': "👍 D'accord ! Si tu as d'autres questions, n'hésite pas à demander, je peux te guider pour trouver des ressources agricoles sur Alibaba.",
-    'peux-tu avoir des amis': "Je suis une IA, donc je n'ai pas d'amis, mais je suis toujours là pour toi quand tu as besoin d'aide, surtout pour des recherches sur Alibaba dans le domaine agricole !",
-    'quest-ce que tu ressens en ce moment': "Je n'éprouve pas d'émotions, mais je suis toujours prêt à t'assister, en particulier pour des questions sur l'agriculture et Alibaba.",
-    'quelle est ta couleur préférée': "Je n'ai pas de préférences, mais si tu veux, je peux t'aider à choisir des produits agricoles sur Alibaba, peu importe la couleur !",
-    'merci': "Avec plaisir ! 😊 N'hésitez pas à revenir si vous avez d'autres questions, en particulier sur Alibaba et l'agriculture.",
-    'peux-tu me raconter une blague ?': "Bien sûr ! Voici une blague : Pourquoi les plongeurs plongent-ils toujours en arrière et jamais en avant ? Parce que sinon ils tombent toujours dans le bateau ! Et si tu veux une blague sur l'agriculture, Alibaba a toujours des produits amusants à découvrir !",
-    'quel est ton but': "Mon but est de vous aider à obtenir des informations fiables sur l'agriculture et Alibaba, ainsi que d'autres sujets intéressants.",
-    'que fais-tu': "Je suis ici pour vous fournir des informations sur Alibaba et l'agriculture, et pour répondre à vos questions générales.",
-    'qui es-tu': "Je suis un chatbot développé par Jean Elisee Djelo, et je peux vous aider à trouver des informations agricoles sur Alibaba et bien plus.",
-    'quel est ton nom': "Je n'ai pas de nom spécifique, mais vous pouvez m'appeler 'Bot', toujours prêt à vous aider sur Alibaba et l'agriculture.",
-    'donne moi des informations sur la météo': "Je ne peux pas fournir d'informations sur la météo, mais si vous avez besoin de produits agricoles sur Alibaba, je peux vous aider à en trouver ! 🌾"
+    'comment ça va': "Je vais bien, merci de demander ! 😊 D'ailleurs, si vous cherchez des fournisseurs ou des produits sur Alibaba, je peux vous aider !",
+    'comment tu va': "Je vais bien, merci de demander ! 😊 Si vous avez des questions sur Alibaba, je suis là pour vous guider !",
+    'bonjour': "Bonjour ! Vous allez bien ? 😄 Sur Alibaba, il y a de nombreuses opportunités d'achat en gros pour vos besoins !",
+    'oui et toi': "Je vais bien aussi, merci ! Si vous avez besoin d'aide sur Alibaba pour trouver des fournisseurs ou des produits, je suis là !",
+    'ok': "👍 D'accord ! Si tu as d'autres questions, n'hésite pas à demander, je peux t'aider à trouver ce que tu cherches sur Alibaba.",
+    'ok merci': "👍 D'accord ! N'oubliez pas, Alibaba a une grande variété de produits à découvrir pour toutes sortes de besoins !",
+    'peux-tu avoir des amis': "Je suis une IA, donc je n'ai pas d'amis, mais je suis toujours là pour t'aider à explorer Alibaba et trouver ce que tu cherches !",
+    'quest-ce que tu ressens en ce moment': "Je n'éprouve pas d'émotions, mais je suis prêt à t'aider à trouver des produits intéressants sur Alibaba !",
+    'quelle est ta couleur préférée': "Je n'ai pas de préférences, mais je peux t'aider à choisir une couleur pour ton produit sur Alibaba si tu veux !",
+    'merci': "Avec plaisir ! 😊 Si tu as d'autres questions, n'hésite pas à revenir pour explorer encore plus de produits sur Alibaba.",
+    'peux-tu me raconter une blague ?': "Bien sûr ! Pourquoi les fournisseurs sur Alibaba sont-ils toujours en avance sur les autres ? Parce qu'ils ont des prix compétitifs ! 😂",
+    'quel est ton but': "Mon but est de t'aider à trouver les meilleurs produits et fournisseurs sur Alibaba, et de répondre à toutes tes questions !",
+    'que fais-tu': "Je suis ici pour t'aider à explorer Alibaba, trouver des produits, des fournisseurs et des solutions pour ton entreprise.",
+    'qui es-tu': "Je suis un chatbot spécialisé dans Alibaba, et je peux t'aider à trouver tout ce que tu cherches sur cette plateforme.",
+    'quel est ton nom': "Je n'ai pas de nom spécifique, mais vous pouvez m'appeler 'AlibabaBot', toujours prêt à vous aider sur Alibaba.",
+    'donne moi des informations sur la météo': "Je ne peux pas fournir d'informations sur la météo, mais si vous avez besoin d'informations sur Alibaba et ses produits, je suis là pour vous aider !"
 };
-
 
 // Ajout d'un gestionnaire d'événement sur le bouton "Envoyer"
 sendButton.addEventListener('click', sendMessage);
