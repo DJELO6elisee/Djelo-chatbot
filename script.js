@@ -7,7 +7,7 @@ const sendButton = document.getElementById('send-button');
 const chatMessages = document.getElementById('chat-messages');
 const loadingIndicator = document.getElementById('loading-indicator');
 
-// Liste des réponses personnalisées pour des questions simples
+// Liste des réponses personnalisées pour des questions  simples
 const simpleResponses = {
     'comment ça va': "Je vais bien, merci de demander ! Et vous ? 😊",
     'ça va': "Tout va bien, merci ! Et vous ?",

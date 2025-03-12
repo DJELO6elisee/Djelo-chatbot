@@ -20,7 +20,7 @@ body {
 .chat-header {
     background-color: #202123;
     padding: 15px;
-    text-align: center;
+    /* text-align: center; */
     font-weight: bold;
 }
 .chat-messages {
