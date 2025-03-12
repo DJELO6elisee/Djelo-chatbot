@@ -45,7 +45,7 @@ function sendMessage() {
     const messageText = messageInput.value.trim();
 
     if (messageText !== '') {
-        // 1. Ajouter le message de l'utilisateur
+        // 1. Ajout du message de l'utilisateur
         appendMessage('user', messageText);
         // 2. Effacer le champ de saisie
         messageInput.value = '';
@@ -65,9 +65,9 @@ function sendMessage() {
 
 // Fonction pour appeler l'API Gemini
 async function getOpenResponse(userMessage) {
-    // Ajouter un contexte spécifique à l'agriculture et limiter la réponse à 100 mots
+    // Ajout d'un contexte spécifique à Alibaba et limiter la réponse à 100 mots
     const context = `
-    Vous êtes un expert en Growth Hacking, acquisition de clients et en utilisation de la plateforme Alibaba. 
+    Vous êtes un expert en Alibaba, acquisition de clients et en utilisation de la plateforme Alibaba. 
     Votre rôle est de répondre uniquement aux questions liées à ces sujets, y compris :
     - Les stratégies de croissance (acquisition, rétention, referral marketing, automatisation, publicités ciblées, outils de Growth Hacking).
     - L'utilisation d'Alibaba pour l'achat, la vente, l'import-export, la recherche de fournisseurs et les bonnes pratiques commerciales.
